@@ -14,6 +14,12 @@ module.exports = {
   //   },
   // },
 
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx}',
+    '!src/**/constants/*.js',
+    '!src/**/{consts,constants}.js',
+  ],
+
   reporters: [
     'default',
     [

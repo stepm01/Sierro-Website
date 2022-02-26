@@ -1,6 +1,6 @@
 module.exports = {
   modulePaths: ['<rootDir>'],
-  rootDir:'__tests__',
+  rootDir: '__tests__',
   moduleNameMapper: {
     '\\.(css|sass|scss)$': 'identity-obj-proxy',
   },
@@ -52,6 +52,6 @@ module.exports = {
           },
         ],
       },
-    }
-  ]
+    },
+  ],
 }

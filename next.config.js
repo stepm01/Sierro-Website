@@ -1,6 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-}
 
-module.exports = nextConfig
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
+  images: {
+    path: '/_next/image',
+    deviceSizes: [320, 640, 1024, 1280],
+  },
+}

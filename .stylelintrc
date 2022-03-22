@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-standard",
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "at-rule-no-unknown": [ true, {
+      "ignoreAtRules": [
+        "apply",
+        "screen",
+        "extends",
+        "tailwind",
+        "utilities",
+        "components",
+        "layer"
+      ]
+    }],
+    "selector-class-pattern": "(^[a-z][a-zA-Z0-9]+$)|(^([a-z][a-z0-9]*)(-[a-z0-9]+)*$)|(^([a-z][a-z0-9]*)(_[a-z0-9]+)*$)"
+  }
+}

@@ -15,9 +15,9 @@ module.exports = {
   // },
 
   collectCoverageFrom: [
-    'src/**/*.{js,jsx}',
-    '!src/**/constants/*.js',
-    '!src/**/{consts,constants}.js',
+    '<rootDir>/src/**/*.{js,jsx}',
+    '!<rootDir>/src/**/constants/*.js',
+    '!<rootDir>/src/**/{consts,constants}.js',
   ],
 
   reporters: [
@@ -35,11 +35,12 @@ module.exports = {
       },
     ],
   ],
+
   projects: [
     {
       displayName: 'dom',
-      testEnvironment: 'jsdom',
-      testMatch: ['./**/*.test.jsx'],
+      testEnvironment: 'jest-environment-jsdom',
+      testMatch: ['<rootDir>/__tests__/**/*.test.jsx'],
       setupFilesAfterEnv: ['<rootDir>/test/dom.setup.js'],
       transform: {
         '^.+\\.js(x?)$': ['@swc/jest'],
@@ -48,15 +49,10 @@ module.exports = {
     {
       displayName: 'node',
       testEnvironment: 'node',
-      testMatch: ['./**/*.test.js'],
+      testMatch: ['<rootDir>/__tests__/**/*.test.js'],
       setupFilesAfterEnv: ['<rootDir>/test/node.setup.js'],
       transform: {
-        '^.+\\.js(x?)$': [
-          '@swc-node/jest',
-          {
-            jsx: true,
-          },
-        ],
+        '^.+\\.js(x?)$': ['@swc/jest'],
       },
     },
   ],

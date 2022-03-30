@@ -5,6 +5,11 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <input
+        class="border-2 border-amber-900 m-5"
+        type="text"
+        value=""
+      />
       <h1
         data-testid="greeting"
       >
@@ -13,6 +18,11 @@ Object {
     </div>
   </body>,
   "container": <div>
+    <input
+      class="border-2 border-amber-900 m-5"
+      type="text"
+      value=""
+    />
     <h1
       data-testid="greeting"
     >

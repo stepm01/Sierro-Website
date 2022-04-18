@@ -11,11 +11,14 @@ export const getServerSideProps = async () => {
 export default function HomePage({ greeting }) {
   const [value, setValue] = useState('')
   const inputRef = useRef({ value: '' })
-  console.info('inputRef.current.value', inputRef.current.value)
+
   const handleOnChange = (e) => {
-    console.info('e.target.value', e.target.value)
-    setValue(e.target.value.match(/.{1,3}/g).join(','))
+    const { value } = e.target
+    const valueArr = value.replaceAll(',', '').match(/.{1,3}/g) || []
+
+    setValue(valueArr.join(','))
   }
+
   return (
     <>
       <input

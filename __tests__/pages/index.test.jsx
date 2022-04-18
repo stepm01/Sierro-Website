@@ -1,3 +1,7 @@
+import { render } from '@testing-library/react'
+import HomePage from '../../src/pages'
+
 test('should match snapshot', function () {
-  expect(1).toBe(1)
-});
+  const { container } = render(<HomePage />)
+  expect(container).toMatchSnapshot()
+})

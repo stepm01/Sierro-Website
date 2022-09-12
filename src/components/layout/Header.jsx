@@ -4,7 +4,7 @@ import { useCallback } from 'react'
 import { useState } from 'react'
 import Logo from '../../../public/images/Logo.svg'
 
-const Header = () => {
+function Header() {
   const [nav, setNav] = useState(false)
   const handleNav = useCallback(() => {
     setNav(!nav)

@@ -24,6 +24,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.3.1",
     "@swc/core": "^1.2.161",
     "@swc/jest": "^0.2.20",
     "@testing-library/jest-dom": "^5.16.3",

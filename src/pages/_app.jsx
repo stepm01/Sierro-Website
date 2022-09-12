@@ -1,14 +1,11 @@
 import '../styles/globals.scss'
-import Head from 'next/head'
-
+import Layout from '../components/layout/Layout'
 const App = ({ Component, pageProps }) => {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Welcome</title>
-      </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }

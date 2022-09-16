@@ -1,11 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,800&display=swap');
 
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 body {
   line-height: 26px;
-  font-family: 'Open Sans', sans-serif;
+
 }
 h1 {
   font-family: Poppins;
